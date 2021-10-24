@@ -1,3 +1,5 @@
+import config
+
 def chopToChunks(lst, n):
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
@@ -12,3 +14,6 @@ def getPulseIndex():
 def foreach(lst, callback):
     for i in range(0, len(lst)):
         lst[i] = callback(i)
+
+def dimColor(color, factor=config.DIM_FACTOR):
+    return [channel / factor for channel in color]
