@@ -23,7 +23,10 @@ python audioVis.v2.py
 attempts to get the volume for each frame and displays 8 past frames on the led matrix -- each column being a frame,
 and each frame showing its volume. It might be easier for you to see it yourself.
 
+## TODOs
 I refactored a little bit, but it could use some additional performance enhancements and commenting.
+
+In addition, it could use a filter/curve remapping to make the audio more reactive in the relevant voice ranges. The frame rate could also be tweaked to be dynamic and adjust to changing network conditions.
 
 ## Credits
 The project is heavily based on the work done at https://github.com/scottlawsonbc/audio-reactive-led-strip/blob/master/python/visualization.py
